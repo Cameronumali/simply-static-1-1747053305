@@ -121,14 +121,15 @@ flexibility(document.documentElement);
 			<style id="uagb-style-conditional-extension">@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}</style>
 <style>
 .wp-block-uagb-container.uagb-block-288b055f {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
-    margin-bottom: 20px !important;
-    z-index: 1;
-    position: relative;
+    position: static !important;
+    z-index: auto !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    margin-bottom: 32px !important;
     height: auto !important;
     min-height: unset !important;
     display: block !important;
+    clear: both !important;
 }
 .uagb-block-288b055f .uagb-container-inner-blocks-wrap {
     align-items: flex-start !important;
@@ -136,6 +137,7 @@ flexibility(document.documentElement);
     min-height: unset !important;
     height: auto !important;
 }
+/* Aggressive override for all children */
 .wp-block-uagb-container.uagb-block-288b055f,
 .wp-block-uagb-container.uagb-block-288b055f *,
 .wp-block-uagb-container.uagb-block-288b055f > .uagb-container-inner-blocks-wrap,
@@ -144,6 +146,7 @@ flexibility(document.documentElement);
     height: auto !important;
     align-items: flex-start !important;
     justify-content: flex-start !important;
+}
 </style>			
 </head>
 
